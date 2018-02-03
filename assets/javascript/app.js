@@ -15,15 +15,19 @@ var elTimeFreq = $("#time-freq").mask("00");
 
 
 // Initialize Firebase
-var config = {
-    apiKey: "AIzaSyDbp9cwrRuVSracoaUoKlt0fFspXdCj9Dg",
-    authDomain: "fir-d56b3.firebaseapp.com",
-    databaseURL: "https://fir-d56b3.firebaseio.com",
-    projectId: "fir-d56b3",
-    storageBucket: "",
-    messagingSenderId: "852229870699"
+
+
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDNlQ0_LGywKGtrChqnvex0dGpOq7t1qbs",
+    authDomain: "fir-trainapp-e4601.firebaseapp.com",
+    databaseURL: "https://fir-trainapp-e4601.firebaseio.com",
+    projectId: "fir-trainapp-e4601",
+    storageBucket: "fir-trainapp-e4601.appspot.com",
+    messagingSenderId: "263911415796"
   };
   firebase.initializeApp(config);
+
 
 // Assign the reference to the database to a variable named 'database'
 var database = firebase.database();
