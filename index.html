@@ -6,13 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Train Schedule</title>
     <meta name="description" content="">
+    <!--link css reset style sheet-->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!--Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--link css style sheet-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+    <!--firebase ref-->
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <!--jquery-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!--Moment.js-->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +31,7 @@
     <div class="container" id="head-container">
         <div class="jumbotron" id="head">
             <h1><img src="assets/images/blue.jpg"> BART <img src="assets/images/blue.jpg"></h1>
-            <h3>Bay Area Rapid Transit Authority</h3>
+            <h3>Cal-Tran Authority</h3>
         </div>
     </div>
 
@@ -56,19 +64,19 @@
                 <form>
                     <div class="form-group">
                         <label for="trainName">Train Name:</label>
-                        <input type="text" class="form-control" id="train-name" required>
+                        <input type="text" class="form-control" id="train-name" placeholder= BART required>
                     </div>
                     <div class="form-group">
                         <label for="destination">Destination:</label>
-                        <input type="text" class="form-control" id="train-destination" required>
+                        <input type="text" class="form-control" id="train-destination" placeholder= Milbrae required>
                     </div>
                     <div class="form-group">
                         <label for="startYear">First Train Time: (military time) </label>
-                        <input type="text" class="form-control" placeholder="HH:MM" id="train-time" required>
+                        <input type="text" class="form-control" placeholder="HH:mm" id="train-time" required>
                     </div>
                     <div class="form-group">
                         <label for="endYear">Frequency (minutes)</label>
-                        <input type="text" class="form-control" id="time-freq">
+                        <input type="text" class="form-control" placeholder=15 id="time-freq">
                     </div>
                     <div class="btn-group" role="group">
                         <button type="button" id="btn-add" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span> Submit</button>
@@ -79,8 +87,11 @@
         </div>
 
     </div>
+    <!-- Jquery -->
 
-    <script src="assets/javascript/app.js"></script>
+        <!-- Javascript -->
+        <script src="assets/javascript/app.js">
+        </script>
 </body>
 
 </html>
